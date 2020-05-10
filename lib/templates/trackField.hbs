@@ -1,5 +1,5 @@
 <TrackFieldRequest USERID="{{userID}}">
-  <Revision>{{revision}}</Revision>{{#if clientIP}}
+  {{#if clientIP}}
   <ClientIp>{{clientIP}}</ClientIp>{{/if}}
   <SourceId>{{sourceID}}</SourceId>{{#each trackID}}
   <TrackID ID="{{this.id}}">{{#if this.destinationZipCode}}
